@@ -18,6 +18,12 @@ Project.init(
     description: {
       type: DataTypes.STRING,
     },
+    genre: {
+      type: DataTypes.STRING,
+    },
+    author: {
+      type: DataTypes.STRING,
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
