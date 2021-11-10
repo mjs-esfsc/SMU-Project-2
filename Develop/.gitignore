@@ -1,3 +1,4 @@
 node_modules
+externals
 .env
 .DS_Store
