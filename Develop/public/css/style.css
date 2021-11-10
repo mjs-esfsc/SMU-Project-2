@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background-color: #E9BFE1;
+  }
+  
+  #main{
+    width: 100vw;
+    margin: auto;
+  }
+  
+  nav{
+    width: 100%;
+    background-color: #E9BFE1;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .logo-and-image{
+    display: flex;
+    justify-content: flex-start;
+    height: 100px;
+  }
+  
+  #name{
+    line-height: 100px;
+    font-family: 'PT Serif', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #F2F0ED;
+    letter-spacing: 1.5px;
+  }
+  
+  .nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin: auto;
+  }
+  
+  .menu > li{
+    display: inline;
+    color: #F2F0ED;
+    font-size: 18px;
+    margin-left: 15px;
+    padding:7px;
+    font-weight: 100;
+  }
+  
+  .menu > li:last-child{
+    margin-right: 25px;
+  }
+  
+  .menu{
+    line-height: 120px;
+    font-family: 'PT Serif', serif;
+  }
+  
+  li > a{
+    text-decoration: none;
+    color: #F2F0ED;
+  }
+  
+  .quote, #newsletter-section{
+    width: 100%;
+    font-family: 'PT Serif', serif;
+    background-color: #E9BFE1;
+  }
+  
+  .quote{
+    margin-top:120px;
+    opacity: 0.9;
+    letter-spacing: 1px;
+  }
+  
+  
+  .quote-section{
+    width: 100%;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    color:#F2F0ED;
+    margin-top:180px;
+    margin-bottom: 100px;
+  }
+  
+  .searchform {
+    background:rgba(244,244,244,.79);
+    border: 1px solid #d3d3d3;
+      left: 50%;
+    padding: 2px 5px;
+    border-radius: 10px;
+    width:480px;
+    box-shadow:0 4px 9px rgba(0,0,0,.37);
+    margin: auto;
+  }
+  
+  .searchform input, .sign-up-form input {
+      background:#fefefe;
+      border: none;
+      font:12px;
+      margin-right: 5px;
+      padding: 10px;
+      width: 340px;
+    border-radius: 9px;
+  }
+  
+  input[placeholder]{
+    font-style: italic;
+  }
+  
+  .searchform button, .sign-up-form button {
+      background: #B73225;
+    border: none;
+      color:#fff;
+      font: 13px;
+      padding: 10px;
+      width:110px;
+    border-radius: 9px;
+  }
+  
+  .searchform button:hover, .sign-up-form button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  
+  .sign-up-form{
+    margin: 25px;
+  }
+  
+  .best-holiday-reads, .must-read-books{
+    background-color: white;
+    width: 100%;
+  }
+  
+  .best-sellers{
+    margin-top: 80px;
+  }
+  
+  .must-read-books{
+    margin-top: 25px;
+  }
+  
+  span{
+    font-family: 'PT Serif', serif;
+    font-size:36px;
+    font-weight: bolder;
+    margin-top: 20px;
+    display: block;
+    padding-left: 50px;
+    padding-top: 30px;
+    color:#203647;
+  }
+  
+  .book{
+    background-color: green;
+    border:1px solid #3F3F3F;
+    margin: 10px 7px 15px 10px;
+    width: 250px;
+    height: 360px;
+    background-size: cover;
+  }
+  
+  #first-row, #second-row{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #second-row, .must-read-books{
+    padding-bottom: 15px;
+  }
+  
+
+  
+  .book:hover{
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  #newsletter-section{
+    height:300px;
+    text-align: center;
+    color: #F2F0ED;
+    padding: 80px 10px;
+    line-height: 60px;
+  }
+  
+  #newsletter-section > h2{
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+  
+  #newsletter-section > p{
+    font-size: 26px;
+  }
+  
+  footer{
+    font-family: 'PT Serif', serif;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #contact, .social{
+    margin: 100px 40px;
+  }
+  
+  footer > #contact{
+    color: #F2F0ED;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  #fb-logo, #twitter-logo, #instagram-logo{
+    width:40px;
+    margin:20px;
+  }
+  
+  .social{
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  
+  @media screen and (max-width:900px){
+    nav{
+      position: static;
+      z-index: 0;
+      top:unset;
+    }
+  
+    #main{
+      width: 1347px;
+    }
+  }
+  
