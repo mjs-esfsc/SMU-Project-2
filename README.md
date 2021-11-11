@@ -1,52 +1,27 @@
-# Project 2
+# Project 2: Off The Shelf
 
-fill here
+Off the Shelf is a web application where users can create an account and browse through numerous book genres. Users can selected a book to purchase or save it in their book history. Additional features are available for members. Users are able to trade books amongst themseleves. 
 
-## User Stories
+## Table of Contents 
+- [Installation](#installation)
+- [Output](#output)
+ -[GitHub & Deploy Link](#githubdeploylink)
+- [Contributers](#contributers)
 
-* one
+### Installation  
 
-* two
+Insert instuctions here.
 
-* three
+### Output
 
-### Acceptance Criteria
+* Insert images and demo video
 
-* * one
+### GitHub & Heroku Link
 
-* two
+* [GitHub Link](https://github.com/mjs-esfsc/SMU-Project-2)
+* [Heroku Link]()
 
-* three
-## Specifications 
-
-* The database models have the following fields and associations:
-
-  * `User`
-
-    * `id`: primary key
-
-    * `name`
-
-    * `email`
-
-    * `password`
-
-  * `Project`
-
-    * `id`: primary key
-
-    * `name`
-
-    * `description`
-
-    * `date_created`
-
-    * `needed_funding`
-
-    * `user_id`: foreign key that references `User.id`
-
-  * Users have many projects, and projects belong to a user.
-
-    * If a user is deleted, all associated projects are also deleted.
-
----
+## Contributers
+* Mark Sammis
+* Zachary Rojas
+*Miranda Zermeno
