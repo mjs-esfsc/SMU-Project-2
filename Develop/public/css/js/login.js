@@ -1,10 +1,12 @@
 const loginFormHandler = async (event) => {
     event.preventDefault();
   
+    // Colect values from login form
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
   
     if (email && password) {
+      // Sends a POST request to API 
       const response = await fetch('/api/users/login', {
         method: 'POST',
         body: JSON.stringify({ email, password }),
@@ -12,6 +14,7 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
+        // Redirects the broweser to the profile page
         document.location.replace('/');
       } else {
         alert('Failed to log in.');
