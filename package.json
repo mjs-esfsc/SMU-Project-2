@@ -1,38 +1,22 @@
 {
-<<<<<<< HEAD
-  "name": "SMU-Project-2",
-  "version": "1.0.0",
-  "description": "fill here",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mjs-esfsc/SMU-Project-2.git"
-=======
-  "name": "eslint-example",
+  "name": "user-list",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "npx eslint **/*.js"
->>>>>>> 2128195f56c1f206e5cb6652821733f5f4fff12d
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
-  "bugs": {
-    "url": "https://github.com/mjs-esfsc/SMU-Project-2/issues"
-  },
-  "homepage": "https://github.com/mjs-esfsc/SMU-Project-2#readme",
   "dependencies": {
-    "express": "^4.17.1"
-=======
-  "devDependencies": {
-    "eslint": "^7.12.1"
->>>>>>> 2128195f56c1f206e5cb6652821733f5f4fff12d
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
   }
 }
