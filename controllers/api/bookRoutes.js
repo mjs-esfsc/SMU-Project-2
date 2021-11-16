@@ -2,7 +2,10 @@
 const router = require('express').Router();
 const db = require('../../models');
 
+// GET all books 
+router.get
 
+module.exports = router;
 
 
 
