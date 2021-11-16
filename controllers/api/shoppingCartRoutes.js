@@ -1,13 +1,16 @@
+const router = require('express').Router();
 const db = require('../../../models');
 
 // Route to get shopping cart for single user ID
-app.get()
+router.get()
 
 // Route to post a new shopping cart
-app.post()
+router.post()
 
 // Route for deleting shopping cart
-app.delete()
+router.delete()
 
 // Route for updating shopping carts (POST route updates)
-app.put()
+router.put()
+
+module.exports = router;
