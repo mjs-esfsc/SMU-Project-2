@@ -3,7 +3,7 @@ CREATE DATABASE bookshare_db;
 
 USE bookshare_db;
 
-CREATE TABLE user (
+CREATE TABLE user_list (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   full_name VARCHAR(30) NOT NULL,
   email VARCHAR(30) NOT NULL
@@ -16,19 +16,19 @@ CREATE TABLE book (
   book_description TEXT,
   genre TEXT,
   author TEXT,
-  user_id INT,
-  FOREIGN KEY (user_id)
-  REFERENCES User(id)
+  owner_id INT,
+  FOREIGN KEY (owner_id)
+  REFERENCES user_list(id)
   ON DELETE SET NULL
 );
 
 
-INSERT INTO user (id, full_name, email)
+INSERT INTO user_list (id, full_name, email)
 VALUES (001, "Mark", "test1@email.com"),
        (002, "Miranda", "test2@email.com"),
        (003, "Zach",  "test3@email.com");
 
-INSERT INTO book (id, title, book_description, genre, author, user_id)
+INSERT INTO book (id, title, book_description, genre, author, owner_id)
 VALUES (001, "War and Peace", "long", "classic fiction", "Melville", 001),
        (002, "Whiteout", "fun", "history", "Cockburn", 001),
        (003, "Helter Skelter", "easy", "true crime", "Bugliosi", 003),
