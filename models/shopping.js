@@ -14,7 +14,7 @@ module.exports = function (sequelize, DataTypes) {
 
     Purchase.associate = function (models) {
         Purchase.belongsTo(models.User, {
-            foreignKey: {  // ??
+            foreignKey: { 
                 allowNull: false
             }
         });
