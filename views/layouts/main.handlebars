@@ -32,26 +32,27 @@
               <a href="#">HOME</a>
             </li>
             <li>
-              <a href="#">ABOUT US</a>
+              <a href="#aboutus">ABOUT US</a>
             </li>
             <li>
               <a href="#contact">CONTACT</a>
             </li>
             <li>
-              <a href="#login-section">LOGIN</a>
+              <a href="/views/login.handlebars">LOGIN</a>
             </li>
-            <li><a href="#" id="cart"><i class="fa-light fa-cart-shopping"></i> CART</a></li>
+             <li>
+              <a href="/views/signup.handlebars">SIGN UP</a>
+            </li>
+            <li><a href="/views/shopping-cart.handlebars" id="cart"><i class="fa-light fa-cart-shopping"></i> CART</a></li>
     </ul>
           </ul>
         </div>
 
       </nav>
 
-      <!--Content-->
-      
-
-         <!--Quote-->
+       <!--Quote-->
         <div class="quote">
+           <img src="https://storage.googleapis.com/lr-assets/shared/1586857293-pexels-photo-590493.jpeg" alt="bookshelf" style="width: 100%;height:20%;">
           <div class="quote-section">
             “There is no friend <br>as loyal as a book” <br> -Ernest Hemingway
           </div>
@@ -65,30 +66,76 @@
       
 
         <!--First section-->
-        <div class="best-seller-reads">
+        <div class="best-sellers-reads">
           <span> Best Sellers</span>
           <!--List-->
           
           <div id="first-row">
+            <div>
               <div class="book a">
+
               </div>
-              <p></p>
+               <h4 class="card-title">The Last Thing He Told Me by Laura Dave</h4>
+    <p class="card-text">Price: $25.00</p>
+    <a href="#" data-name="book b" data-price="25.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+            </div>
+
               <div class="book b">
               </div>
+              <h4 class="card-title">Anxious People by Fredrik Backman</h4>
+    <p class="card-text">Price: $20.00</p>
+    <a href="#" data-name="book b" data-price="20.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+
               <div class="book c">
               </div>
+              <h4 class="card-title">For the Wolf by Hannah Whitten</h4>
+    <p class="card-text">Price: $34.00</p>
+    <a href="#" data-name="book c" data-price="34.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+
+
               <div class="book d">
               </div>
+              <h4 class="card-title">The Beekeeper of Aleppo by Christy Lefteri</h4>
+    <p class="card-text">Price: $27.00</p>
+    <a href="#" data-name="book d" data-price="27.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
           </div>
+
+
+
           <div id="second-row">
               <div class="book e">
               </div>
+             <h4 class="card-title">Apples Never Fall by Liane Moriarty</h4>
+    <p class="card-text">Price: $21.00</p>
+    <a href="#" data-name="book e" data-price="21.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+
               <div class="book f">
               </div>
+            <h4 class="card-title">We Are All The Same in The Dark by Julia Heaberlin</h4>
+    <p class="card-text">Price: $30.00</p>
+    <a href="#" data-name="book f" data-price="30.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+
               <div class="book g">
               </div>
+            <h4 class="card-title">The Boys by Ron Howard and Clint Howard</h4>
+    <p class="card-text">Price: $27.00</p>
+    <a href="#" data-name="book g" data-price="27.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+
               <div class="book h">
               </div>
+          <h4 class="card-title">The Couple Next Door by Shari Lapena</h4>
+    <p class="card-text">Price: $18.00</p>
+    <a href="#" data-name="book h" data-price="18..00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+
           </div>
         </div>
         <!--Second section-->
@@ -98,12 +145,33 @@
           <div id="first-row">
               <div class="book i">
               </div>
+            <h4 class="card-title">Where The Crawdads Sing by Delia Owens</h4>
+    <p class="card-text">Price: $27.00</p>
+    <a href="#" data-name="book i" data-price="27.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+
+
               <div class="book l">
               </div>
+            <h4 class="card-title">The 1619 Project by Nikole Hannah-Jones</h4>
+    <p class="card-text">Price: $15.00</p>
+    <a href="#" data-name="book l" data-price="15..00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+
               <div class="book m">
               </div>
+            <h4 class="card-title">The Four Winds by Kristin Hannah</h4>
+    <p class="card-text">Price: $21.00</p>
+    <a href="#" data-name="book m" data-price="21.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+
               <div class="book n">
               </div>
+          <h4 class="card-title">The Guest List by Lucy Foley</h4>
+    <p class="card-text">Price: $18.00</p>
+    <a href="#" data-name="book n" data-price="18.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+
           </div>
         </div>
         <!--Newsletter-->
@@ -115,6 +183,31 @@
             <button type="submit">SIGN UP</button>
           </form>
         </div>
+      
+      <div class="card-body"style=" text-align: center; justify-content: center;">
+            <h1 style="background-color: rgb(0, 0, 0); color: white;">ABOUT US</h1>
+            <h3>If you love to read, no matter where you are, then The Good Reader is for you.</h3>
+          <p class="card-text"> 
+            The Good Reader, Your Personal Bookshelf, is a user-friendly web application that allows every member of its community to create their own reader space, not only to find their favorite books or collections, but also to buy directly from their own secured accounts. 
+            </p>
+            <p> Discover more than 6,000 different books from all kinds of topics. </p>
+            <p> What are you waiting for?</p>
+            <p>Create Your Personal Bookshelf!</p>
+        </div>
+        
+
+
+    <div class="list-group" style=" text-align: center; justify-content: center;">
+        <h2 style="background-color: gray; color: white;">EXCLUSIVE BENEFITS</h2>
+        <a href="#" class="list-group-item list-group-item-action">Buy your favorite books</a>
+        <a href="#" class="list-group-item list-group-item-action">Personalize your online library</a>
+        <a href="#" class="list-group-item list-group-item-action">More than 6,000 books</a>
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Take you fav books with you, always</a>
+      </div>
+      
+      <img id="logoImg" src="https://storage.googleapis.com/lr-assets/shared/1586857293-pexels-photo-590493.jpeg" width="950px" height="500px">
+    </div>
+
         <!--Contacts and social network-->
         <footer>
           <!--Contacts-->
