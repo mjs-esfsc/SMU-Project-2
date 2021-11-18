@@ -1,16 +1,30 @@
 const router = require('express').Router();
-const db = require('../../models');
+const Shopping = require('../../models/shopping');
+const withAuth = require('../../utils/auth');
 
-// Route to get shopping cart for single user ID
-router.get()
+// Create a new shopping cart
+router.post('/', withAuth, async (req, res) => {
+    try {
+        const newCart = await Shopping.create({
+            ...req.body,
+            user_id: req.session.user_id,
+        });
 
-// Route to post a new shopping cart
-router.post()
+        res.status(200).json(newCart);
+    }   catch (err) {
+        res.status(400).json(err);
+    }
+});
+ // Update an existing shopping cart
+router.put('/', withAuth, async (req, res) => {
+    const cartData = await Shopping.update(
+        {
 
-// Route for deleting shopping cart
-router.delete()
+        }
+    )
+})
 
-// Route for updating shopping carts (POST route updates)
-router.put()
+// Delete current shopping cart
+router.delete('/')
 
 module.exports = router;
