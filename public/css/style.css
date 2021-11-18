@@ -93,14 +93,14 @@ li > a{
 .quote, #newsletter-section{
   width: 100%;
   font-family: 'PT Serif', serif;
-  background-color:  #000000;
+  background-color:black;
 }
 
 .quote{
   margin-top:120px;
   opacity: 0.9;
   letter-spacing: 1px;
-  background-color: #000000;
+  background-color:black;
 }
 
 
@@ -110,9 +110,9 @@ li > a{
   font-weight: bold;
   text-align: center;
   color:white;
-  margin-top:180px;
-  margin-bottom: 100px;
-  background-color: #000000;
+  margin-top:50px;
+  margin-bottom: 150px;
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv3a5hb5zcWpXrW2s0cx47wA7yWOfXNjrPvQ&usqp=CAU); */
 }
 
 .searchform {
@@ -196,6 +196,7 @@ span{
   margin: 20px;
   display: flex;
   justify-content: space-around;
+  
 }
 
 #second-row, .must-read-books{
