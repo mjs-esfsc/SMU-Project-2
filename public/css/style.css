@@ -35,6 +35,7 @@ nav{
   z-index: 1;
 }
 
+
 #logo{
   background-image: url(image/Off\ the\ Shelf-Logo.png);
   background-size: cover;
@@ -158,13 +159,13 @@ input[placeholder]{
   margin: 25px;
 }
 
-.best-holiday-reads, .must-read-books{
+.best-sellers-reads, .must-read-books{
   background-color: white;
-  width: 100%;
 }
 
-.best-sellers{
+.best-sellers-reads{
   margin-top: 80px;
+ 
 }
 
 .must-read-books{
