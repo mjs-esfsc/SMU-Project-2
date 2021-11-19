@@ -3,7 +3,7 @@ const Shopping = require('../../models/shopping');
 const withAuth = require('../../utils/auth');
 
 // Create a new shopping cart
-router.post('/shopping', withAuth, async (req, res) => {
+router.post('/cart', withAuth, async (req, res) => {
     try {
         const newCart = await Shopping.create({
             ...req.body,
