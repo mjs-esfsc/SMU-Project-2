@@ -22,6 +22,16 @@
   background-color: #ffffff;
 }
 
+.form.signup-form{
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 16em;
+  background-color: #ffffff;
+}
+
+
 .login-card{
   width: 100%;
   max-width: 330px;
