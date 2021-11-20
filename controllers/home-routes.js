@@ -15,19 +15,19 @@ const withAuth = require('../utils/auth');
 //     });
     router.get('/user', async (req, res) => {
       try {
-        const projectData = await User.findAll( {
-          include: [
-            {
-              model: User,
-              attributes: ['full_name'],
-            },
-          ],
-        });
-    const project = projectData.get({ plain: true });
+    //     const projectData = await User.findAll( {
+    //       include: [
+    //         {
+    //           model: User,
+    //           attributes: ['full_name'],
+    //         },
+    //       ],
+    //     });
+    // const project = projectData.get({ plain: true });
 
     res.render('users', {
-      ...project,
-      logged_in: req.session.logged_in
+      // ...project,
+      // logged_in: req.session.logged_in
     });
   } catch (err) {
     res.status(500).json(err);
@@ -36,23 +36,23 @@ const withAuth = require('../utils/auth');
 
 //end test users route
 
-// router.get('/', async (req, res) => {
-//   try {
-//     const userData = await User.findAll({
-//       attributes: { exclude: ['password'] },
-//       order: [['name', 'ASC']],
-//     });
+router.get('/', async (req, res) => {
+  try {
+    const userData = await User.findAll({
+      attributes: { exclude: ['password'] },
+      order: [['name', 'ASC']],
+    });
 
-//     const users = userData.map((project) => project.get({ plain: true }));
+    const users = userData.map((project) => project.get({ plain: true }));
 
-//     res.render('homepage', {
-//       users,
-//       logged_in: req.session.logged_in,
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+    res.render('homepage', {
+      users,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 router.get('/', withAuth, async (req, res) => {
   try {
@@ -72,13 +72,13 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
-router.get('/login', (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/');
-    return;
-  }
+// router.get('/login', (req, res) => {
+//   if (req.session.logged_in) {
+//     res.redirect('/');
+//     return;
+//   }
 
-  res.render('login');
-});
+//   res.render('login');
+// });
 
 module.exports = router;
