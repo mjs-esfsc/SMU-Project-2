@@ -3,7 +3,7 @@ const router = require('express').Router();
 const Book = require('../../models/Book');
 
 // Get all books 
-router.get('/', async (req, res) => {
+router.get('/browse', async (_req, res) => {
     const bookData = await Book.findAll();
     return res.json(bookData);
 });
