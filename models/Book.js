@@ -31,9 +31,9 @@ Book.init(
         key: 'id',
       },
     },
-    price: {
-      type: DataTypes.DECIMAL(10,2),
-    },
+    // price: {
+    //   type: DataTypes.DECIMAL(10,2),
+    // },
     // Added price for books
   },
   {
