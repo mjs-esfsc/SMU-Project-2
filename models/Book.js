@@ -5,24 +5,27 @@ class Book extends Model {}
 
 Book.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    book_description: {
+    author: {
       type: DataTypes.STRING,
     },
     genre: {
       type: DataTypes.STRING,
     },
-    author: {
+    thumbnail: {
       type: DataTypes.STRING,
+    },
+    book_description: {
+      type: DataTypes.STRING,
+    },
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -31,10 +34,10 @@ Book.init(
         key: 'id',
       },
     },
-    price: {
-      type: DataTypes.DECIMAL(10,2),
-    },
-    // Added price for books
+  //  price: {
+  //    type: DataTypes.DECIMAL(10,2),
+  //   },
+  //   Added price for books
   },
   {
     sequelize,
