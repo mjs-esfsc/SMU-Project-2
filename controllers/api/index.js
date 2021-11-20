@@ -7,7 +7,6 @@ router.use('/users', userRoutes);
 router.use('/books', bookRoutes);
 router.use('/cart', shoppingCartRoutes);
 
-
 module.exports = router;
 
 // apiKey: AIzaSyDr8fjBfhX19qdQq2p4-7aw7d0sGL2BI5s

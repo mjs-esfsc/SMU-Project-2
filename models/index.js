@@ -1,6 +1,6 @@
 const User = require('./User');
 const Book = require('./Book');
-//const Shopping = require('./shopping');
+const Shopping = require('./shopping');
 
 
 User.hasMany(Book, {
