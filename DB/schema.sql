@@ -1,5 +1,6 @@
 DROP DATABASE IF EXISTS bookshare_db;
 CREATE DATABASE bookshare_db;
+USE bookshare_db;
 
 CREATE TABLE IF NOT EXISTS book (
     `title` VARCHAR(324) CHARACTER SET utf8,
