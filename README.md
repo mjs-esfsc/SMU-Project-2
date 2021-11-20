@@ -37,7 +37,7 @@ The application will be invoked by using the following command:
 ### GitHub & Heroku Link
 
 * [GitHub Link](https://github.com/mjs-esfsc/SMU-Project-2)
-* [Heroku Link]()
+* [Heroku Link](https://cryptic-inlet-69764.herokuapp.com/)
 
 ## Contributers
 * Mark Sammis
