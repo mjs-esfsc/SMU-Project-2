@@ -5,7 +5,11 @@ const shoppingCartRoutes = require('./shoppingCartRoutes');
 
 router.use('/users', userRoutes);
 router.use('/books', bookRoutes);
+<<<<<<< HEAD
 router.use('/shopping', shoppingCartRoutes);
+=======
+router.use('/cart', shoppingCartRoutes);
+>>>>>>> main
 
 module.exports = router;
 

@@ -97,7 +97,7 @@ li > a{
 }
 
 .quote{
-  margin-top:120px;
+  margin-top:150px;
   opacity: 0.9;
   letter-spacing: 1px;
   background-color:black;
@@ -110,8 +110,8 @@ li > a{
   font-weight: bold;
   text-align: center;
   color:white;
-  margin-top:50px;
-  margin-bottom: 150px;
+  margin-top:200px;
+  margin-bottom: 200px;
   /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv3a5hb5zcWpXrW2s0cx47wA7yWOfXNjrPvQ&usqp=CAU); */
 }
 
