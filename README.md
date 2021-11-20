@@ -43,3 +43,4 @@ The application will be invoked by using the following command:
 * Miranda Zermeno
 
 ## MIT LICENSE 
+![GitHub license](https://img.shields.io/badge/license-MIT-#69ff69.svg)
