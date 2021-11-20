@@ -160,7 +160,7 @@ input[placeholder]{
 }
 
 .best-sellers-reads, .must-read-books{
-  background-color: white;
+  background-color:white;
 }
 
 .best-sellers-reads{
@@ -196,11 +196,14 @@ span{
   margin: 20px;
   display: flex;
   justify-content: space-around;
-  
 }
 
 #second-row, .must-read-books{
   padding-bottom: 15px;
+}
+
+.book a,.book b{
+
 }
 
 .a{
@@ -253,6 +256,21 @@ span{
 
 .n{
   background-image: url(https://m.media-amazon.com/images/I/81QEpeAxCxS._AC_UL320_.jpg);
+}
+
+#about-section{
+  height: 200px;
+  text-align: center;
+  color:black;
+  padding: 80px 10px;
+  line-height: 60px;
+  background-color: white;
+ 
+}
+
+#about-section >h2{
+ font-size: 40px;
+ letter-spacing: 1px;
 }
 
 .book:hover{
@@ -315,7 +333,6 @@ footer > #contact{
     width: 1347px;
   }
 }
-
 
 
 /* *{

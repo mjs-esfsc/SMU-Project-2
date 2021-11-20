@@ -13,3 +13,8 @@ const seedAll = async () => {
 };
 
 seedAll();
+
+// for(let i = 0; i < books; i++){
+//    html = `<div class = 'book${i}'></div>`
+//    bookcontanier.innerHTML += html
+// }
